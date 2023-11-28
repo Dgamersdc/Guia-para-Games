@@ -1,0 +1,614 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Times New Roman", Times, serif;
+    box-sizing: border-box;
+}
+
+/* Estilos para telas menores, como dispositivos móveis */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cardC {
+        margin: 0;
+    }
+
+    #nav {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    ul {
+        font-size: 14px; 
+        padding: 5px; 
+    }
+
+    .Holizontal {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+
+/* Estilos para telas de notebook (largura entre 601 e 1000 pixels) */
+@media (min-width: 601px) and (max-width: 1000px) {
+    header {
+        justify-content: space-between; 
+    }
+
+    #nav {
+        width: 70%;
+    }
+
+    .Holizontal {
+        margin: 0;
+    }
+}
+
+/* Estilos para telas maiores, com largura superior a 1000 pixels */
+@media (min-width: 1001px) {
+    header {
+        justify-content: space-between; 
+    }
+
+    #nav {
+        width: 50%;
+    }
+
+    .Holizontal {
+        margin: 0;
+    }
+}
+
+/*Cabeçalho*/
+header {
+    padding: 10px;
+    display: flex;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+/*Guia*/
+#nav {
+    width: 66%;
+    display: block;
+    border: 1px solid rgb(0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+/*Corpo do texto*/
+main {
+
+    min-height: 78vh;
+    width: 100%;
+
+    border: 1px solid transparent;
+
+}
+
+/*Roda pé*/
+footer {
+
+    border: 0px solid rgb(185, 15, 15);
+    align-items: center;
+    min-height: 1vh;
+    padding: 5px;
+
+}
+
+/*Barra de Pesquisa*/
+#Busca {
+    background-color: #9acfcf;
+    border-radius: 25px;
+    width: 100%;
+    padding: 10px;
+    border: solid 1px;
+    border-color: transparent;
+    height: 50px;
+
+}
+
+#Busca:hover {
+    border: solid 3px #A3B8CF;
+    z-index: 1;
+}
+
+#txtBusca {
+    float: inline-start;
+    background-color: transparent;
+    padding-left: 17px;
+    font-style: italic;
+    font-size: 28px;
+    border-color: transparent;
+    border: none;
+    height: auto;
+    width: 360px;
+
+    background: none;
+    outline: none;
+}
+
+.search-btn {
+    color: #CFB0AE;
+    background: transparent;
+    padding-left: 30px;
+    font-size: 22px;
+
+}
+
+/*Imagens*/
+#img-Logo {
+    background-image: url('../img/Logoguia.png')
+}
+
+#imgFundo {
+    background-image: url('../img/fundo2.png');
+}
+
+#imgFundoPS {
+    background-image: url('../img/play.jpg');
+
+}
+
+#imgFundoXbox {
+    background-image: url('../img/Xbox2.jpg');
+
+}
+
+#imgFundoNint {
+    background-image: url('../img/NIntendo.jpg');
+
+}
+
+#img-loja1 {
+    background-image: url('../img/Amazon.jpg');
+}
+
+#img-loja2 {
+    background-image: url('../img/kabum.webp');
+}
+
+#img-loja3 {
+    background-image: url('../img/Terabytes.webp');
+}
+
+#img-loja4 {
+    background-image: url('../img/MercadoLivre.jpg');
+}
+
+#img-loja5 {
+    background-image: url('../img/pichau.jpeg');
+}
+
+#img-loja6 {
+    background-image: url('../img/Aliexpress.webp');
+}
+
+#img-marcas1 {
+    background-image: url('../img/razer.png');
+}
+
+#img-marcas2 {
+    background-image: url('../img/logitech.png');
+}
+
+#img-marcas3 {
+    background-image: url('../img/redragon.png');
+}
+
+#img-marcas4 {
+    background-image: url('../img/Intel.png');
+}
+
+#img-marcas5 {
+    background-image: url('../img/amd.png');
+}
+
+#img-marcas6 {
+    background-image: url('../img/nvidia.png');
+}
+
+
+.product-image {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 10px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+
+}
+
+/*Estrutura*/
+.card {
+    padding: 20px;
+    width: 500px;
+    background-color: transparent;
+
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border: 0px solid blue;
+}
+
+.cardEsp {
+    width: 100%;
+    background-color: transparent;
+    margin-top: 100px;
+
+
+    border: 0px solid blue;
+}
+
+.cardMarca {
+    padding: 20px;
+    width: 500px;
+    background-color: transparent;
+
+    display: block;
+
+    margin-top: 30px;
+    
+
+    border: 0px solid blue;
+}
+
+/*Estrutura macro*/
+.cardcd {
+    padding: 21px;
+    width: 60%;
+
+
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    border: 0px solid rgb(193, 193, 212);
+
+}
+
+.cardcm {
+
+    width: 80%;
+    display: inline-flex;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-block-end: 10px;
+
+    border: 0px solid rgb(193, 193, 212);
+
+}
+
+.cardover {
+
+    width: 60%;
+
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-block-end: 10px;
+
+    border: 0px solid rgb(193, 193, 212);
+
+    overflow-x: scroll;
+
+
+}
+
+#scroller {
+
+    overflow-x: scroll;
+    display: inline-flex;
+    box-sizing: border-box;
+    scroll-snap-type: x mandatory;
+}
+
+#scroller > div {
+
+    flex: 0 0 500px;
+    width: 500px;
+    display: inline-block;
+    scroll-snap-align: end;
+}
+
+
+/*Estrutura sobre macro */
+.cardm {
+
+    width: 50%;
+
+    display: inline-block;
+    margin: 1% 1%;
+
+    border: 0.5px solid rgb(0, 0, 0);
+
+    text-align: justify;
+    
+}
+
+.cardgm {
+
+    margin: 1% 1%;
+
+    border: 0px solid rgb(30, 255, 0);
+
+    text-align: justify;
+
+
+}
+
+/*Estrutura Roda pé*/
+.cardF {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 18px;
+    border: 0px solid rgb(255, 0, 140);
+    display: block;
+
+    text-align: center;
+
+}
+
+/*Estrutura Cabeçalho*/
+.cardC {
+
+    display: block;
+    border: 0px solid blue;
+    margin-left: auto;
+
+
+}
+
+/*Estrutura botão*/
+.cardB {
+    width: 66%;
+    display: block;
+    border: 0px solid blue;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/*Botão*/
+.btn {
+    display: inline-block;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 50%;
+
+    margin-left: 90px;
+
+}
+
+.btn:hover {
+    background-color: rgb(39, 105, 179);
+    color: rgb(245, 57, 19);
+    
+
+}
+
+/*Estetica do Botão cada pagina*/
+.esteticaB {
+    display: inline-block;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    
+    color: rgb(245, 57, 19);
+
+    margin-left: 90px;
+
+
+}
+
+/*Logo*/
+/*.cardC > a{
+    text-align: center;
+    margin: 0 10px;
+    color: aqua;
+    
+}
+*/
+.cardLogo {
+
+    width: 50%;
+    
+    margin: 1% 1%;
+    margin-left: auto;
+    margin-right: auto;
+
+   
+
+    text-align: justify;
+    
+}
+
+.cardLogo2 {
+
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+
+
+    
+}
+
+/*Listas*/
+ul {
+    font-size: 15px;
+    padding: 10px;
+    margin: 0;
+    color: #fff;
+
+}
+
+.SemP {
+    list-style: none;
+}
+
+.Holizontal {
+    display: inline-block;
+    margin: 0 10px;
+
+}
+
+.tabelha {
+    font-size: 22px;
+    margin-left: 30px;
+    list-style: square;
+}
+
+.subTitulo {
+    font-size: 20px;
+    margin-left: 30px;
+    list-style: none;
+    line-height: 2;
+}
+
+.sublinha {
+    list-style: circle;
+    margin-left: 30px;
+}
+
+.listaprodutos {
+    font-size: 20px;
+    margin-left: 30px;
+    line-height: 2;
+    color: black;
+}
+
+li > span {
+    outline: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+a:link {
+    text-decoration: none;
+    outline: none;
+}
+
+/*Colores*/
+
+#Play {
+    color: rgb(0, 89, 255);
+    outline: none;
+    text-align: center;
+
+}
+
+#Play2 {
+    color: rgb(0, 89, 255);
+    outline: none;
+
+
+}
+
+/*Titulos das marcas*/
+#Xbox {
+    color: rgb(7, 117, 7);
+    outline: none;
+    text-align: center;
+}
+
+#Xbox2 {
+    color: rgb(30, 255, 0);
+    outline: none;
+
+}
+
+/*Titulos das marcas*/
+#Niten {
+    color: red;
+    outline: none;
+    text-align: center;
+}
+
+#Niten2 {
+    color: rgb(255, 51, 0);
+    outline: none;
+
+}
+
+/*Colores dos links do Roda pé */
+#ColorF {
+    color: #97A0A6;
+}
+
+/*Coleres da Sub paginas*/
+#Colorfundo {
+    background-color: #ADB1D9;
+}
+
+/*Coleres das guias*/
+#ColorH {
+    background-color: #00010D;
+}
+
+/*Coleres de fundo*/
+#colorFundo {
+    background-color: white;
+}
+
+/*textos*/
+h1 {
+    font-style: times;
+    text-align: center;
+    
+    
+}
+/*texto da Especificações*/
+.textao{
+    font-size: 50px;
+    color: #97A0A6;
+    font-style: times;
+ }
+ .text{
+    color: #97A0A6;
+    font-style: times;
+}
+
+
+h2 {
+    color: white;
+    text-align: center;
+    font-style: times;
+}
+
+p {
+    color: black;
+
+    font-style: times;
+    font-size: 20px;
+
+    /*word-break: break-all;*/
+    text-align: justify;
+
+}
+
+
+.row {
+    min-height: 78vh;
+    width: 100%;
+
+    display: inline-flex;
+
+}
+
+.over {
+    overflow-x: scroll;
+}
